@@ -4,11 +4,11 @@ title: About
 permalink: /about/
 ---
 
-<h2> Who am I? <h2>
+<h4> Who am I? </h4>
 
 I’m currently working in the financial services industry in Melbourne, after having finished studying at the University of Melbourne (Bachelor of Commerce, Economics and Finance).
 
-<h2> Why does this blog exist? <h2>
+<h4> Why does this blog exist? </h4>
 
 I suffer from the problem of being interested in many different things; a non-exhaustive list includes machine learning and computer vision, ecological systems, statistics and risk management, trading, and evolutionary biology. Notwithstanding the enjoyment I may receive from indulging my interest in the above subjects, there comes a time where one must engage in a more unified course of action to avoid drifting aimlessly between disparate goals. If anything, this blog is an attempt to do just that.
 
