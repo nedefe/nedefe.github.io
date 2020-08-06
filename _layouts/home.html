@@ -24,6 +24,11 @@ layout: default
         {%- if site.show_excerpts -%}
           {{ post.excerpt }}
         {%- endif -%}
+
+        {% if post.related_image %}
+          <img src="{{ post.related_image }}" alt="">
+        {% endif %}
+
       </li>
       {%- endfor -%}
     </ul>

@@ -3,6 +3,7 @@ layout: post
 title:  "This is a test post!"
 date:   2020-08-03 15:12:44 +1000
 categories: a test post
+related_image: /images/bear.jpg
 ---
 This is a test post that I have created while building my site.
 
