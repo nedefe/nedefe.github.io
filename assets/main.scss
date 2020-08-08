@@ -86,33 +86,37 @@
 }
 
 .page-content {
-  .img-wrapper {
-    float: left;
-    margin-right: 30px;
-    width: 300px;
+  .page-img-wrapper {
+    margin-bottom: 20px;
     position: relative;
+    width: 300px;
 
-    img {
-      padding-right: 14px;
-      border-right: 1px solid lightgray;
-    }
+    @media screen and (min-width: 480px) {
+      float: right;
+      margin-left: 15px;
 
-    &::before {
-      content: '\2022';
-      font-size: 32px;
-      position: absolute;
-      right: -21.5px;
-      bottom: -24px;
-      color: lightgray;
-    }
+      img {
+        padding-left: 14px;
+        border-left: 1px solid lightgray;
+      }
 
-    &::after {
-      content: '\2022';
-      font-size: 32px;
-      position: absolute;
-      right: -21.5px;
-      top: -29px;
-      color: lightgray;
+      &::before {
+        content: '\2022';
+        font-size: 32px;
+        position: absolute;
+        left: -6px;
+        bottom: -24px;
+        color: lightgray;
+      }
+
+      &::after {
+        content: '\2022';
+        font-size: 32px;
+        position: absolute;
+        left: -6px;
+        top: -29px;
+        color: lightgray;
+      }
     }
   }
 }
