@@ -8,6 +8,11 @@ layout: default
   </header>
 
   <div class="post-content">
+    {% if post.related_image %}
+      <div class="img-wrapper">
+        <img src="{{ page.related_image }}" />
+      </div>
+    {% endif %}
     {{ content }}
   </div>
 

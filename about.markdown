@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+related_image: /images/bear.jpg
 ---
 
 <h4> Who am I? </h4>
