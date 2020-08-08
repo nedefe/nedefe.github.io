@@ -1,0 +1,122 @@
+---
+---
+
+@import "minima";
+
+.post-list {
+  li {
+    margin-bottom: 0;
+
+    &:first-child {
+      .post-list-item > .img-wrapper {
+        @media screen and (min-width: 480px) {
+          &::before {
+            content: '\2022';
+            font-size: 32px;
+            position: absolute;
+            right: -7.5px;
+            top: -28px;
+            color: lightgray;
+          }
+          padding-top: 0;
+        }
+      }
+
+      .post-list-item__content {
+        padding-top: 0;
+      }
+    }
+
+    &:last-child {
+      .post-list-item > .img-wrapper {
+        @media screen and (min-width: 480px) {
+          &::before {
+            content: '\2022';
+            font-size: 32px;
+            position: absolute;
+            right: -7.5px;
+            bottom: -24px;
+            color: lightgray;
+          }
+          padding-bottom: 0;
+        }
+      }
+      .post-list-item__content {
+        padding-bottom: 0;
+      }
+    }
+
+    .post-list-item {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+
+      @media screen and (min-width: 480px) {
+        flex-direction: row;
+      }
+
+      .img-wrapper {
+        position: relative;
+        width: 100%;
+        margin-bottom: 15px;
+
+        @media screen and (min-width: 480px) {
+          border-right: 1px solid lightgray;
+          padding: 20px 20px 20px 0;
+          margin-bottom: 0px;
+          max-height: 220px;
+          width: 280px;
+        }
+      }
+
+      &__content {
+        margin-bottom: 30px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid lightgray;
+
+        @media screen and (min-width: 480px) {
+          margin-bottom: 0;
+          border-bottom: none;
+          margin-left: 20px;
+          padding: 20px 0;
+        }
+      }
+    }
+  }
+}
+
+.page-content {
+  .page-img-wrapper {
+    margin-bottom: 20px;
+    position: relative;
+    width: 300px;
+
+    @media screen and (min-width: 480px) {
+      float: right;
+      margin-left: 15px;
+
+      img {
+        padding-left: 14px;
+        border-left: 1px solid lightgray;
+      }
+
+      &::before {
+        content: '\2022';
+        font-size: 32px;
+        position: absolute;
+        left: -6px;
+        bottom: -24px;
+        color: lightgray;
+      }
+
+      &::after {
+        content: '\2022';
+        font-size: 32px;
+        position: absolute;
+        left: -6px;
+        top: -29px;
+        color: lightgray;
+      }
+    }
+  }
+}
