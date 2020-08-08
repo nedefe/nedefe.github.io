@@ -84,3 +84,35 @@
     }
   }
 }
+
+.page-content {
+  .img-wrapper {
+    float: left;
+    margin-right: 30px;
+    width: 300px;
+    position: relative;
+
+    img {
+      padding-right: 14px;
+      border-right: 1px solid lightgray;
+    }
+
+    &::before {
+      content: '\2022';
+      font-size: 32px;
+      position: absolute;
+      right: -21.5px;
+      bottom: -24px;
+      color: lightgray;
+    }
+
+    &::after {
+      content: '\2022';
+      font-size: 32px;
+      position: absolute;
+      right: -21.5px;
+      top: -29px;
+      color: lightgray;
+    }
+  }
+}
